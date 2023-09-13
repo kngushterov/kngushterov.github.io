@@ -1,22 +1,22 @@
 <template>
-  <div class="bg-sky-800 text-white h-screen flex flex-col items-center">
+  <div class="bg-primary text-white flex flex-col items-center min-h-screen">
     <HeaderComponent />
-    <NavBar />
     <HomeView />
+    <FooterComponent />
   </div>
 </template>
 
 <script lang="ts">
+import FooterComponent from './components/FooterComponent.vue'
 import HeaderComponent from './components/HeaderComponent.vue'
-import NavBar from './components/NavBar.vue'
 import HomeView from './views/HomeView.vue'
 
 export default {
   name: 'app',
   components: {
     HeaderComponent,
-    NavBar,
-    HomeView
+    HomeView,
+    FooterComponent
   }
 }
 </script>
