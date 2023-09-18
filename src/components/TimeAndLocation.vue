@@ -1,11 +1,11 @@
 <template>
-  <div class="flex gap-8">
+  <div class="flex flex-col lg:flex-row lg:gap-8">
     <div :class="divStyles">
-      <img :class="imgStyles" src="../../public/calendar.svg" />
+      <img :class="imgStyles" src="/calendar.svg" />
       <p :class="pStyles">{{ timeInterval.from }} - {{ timeInterval.to }}</p>
     </div>
     <div :class="divStyles">
-      <img :class="imgStyles" src="../../public/location.svg" />
+      <img :class="imgStyles" src="/location.svg" />
       <p :class="pStyles">{{ location }}</p>
     </div>
   </div>
