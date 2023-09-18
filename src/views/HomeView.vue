@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-4/5 p-10 bg-white text-black flex flex-col gap-4 lg:flex-row lg:gap-7 rounded-3xl border-8 border-secondary"
+    class="w-11/12 sm:w-4/5 p-5 sm:p-10 bg-white text-black flex flex-col gap-4 lg:flex-row lg:gap-7 rounded-3xl border-8 border-secondary"
   >
     <div class="flex flex-col gap-4 lg:w-7/12">
       <AccordionComponent title="Work Experience">

@@ -8,12 +8,12 @@
     </header>
     <TimeAndLocation v-bind="{ timeInterval, location }" />
     <div class="mt-1">
-      <p v-for="(text, i) in description" :key="i">
+      <p v-for="(text, i) in description" :key="i" class="text-justify">
         {{ text }}
       </p>
     </div>
     <div v-if="Boolean(points)">
-      <li v-for="(point, i) in points" :key="i">
+      <li v-for="(point, i) in points" :key="i" class="text-justify">
         {{ point }}
       </li>
     </div>

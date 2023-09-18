@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="flex gap-2 items-center">
-      <img class="h-8 w-8" :src="`/${icon}.svg`" />
+    <div>
+      <img class="h-7 w-7 float-left mr-2" :src="`/${icon}.svg`" />
       <header class="font-bold text-xl">
         {{ title }}
       </header>
     </div>
-    <p>
+    <p class="text-justify">
       {{ description }}
     </p>
   </div>

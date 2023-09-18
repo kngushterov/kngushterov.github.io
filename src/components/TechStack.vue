@@ -3,7 +3,7 @@
     <p
       v-for="(tech, i) in techStack"
       :key="i"
-      class="border-2 border-secondary font-bold text-primary h-fit rounded text-center"
+      class="border-2 border-secondary font-bold text-primary h-fit rounded text-center hover:cursor-default hover:bg-primary hover:text-white"
     >
       {{ tech }}
     </p>
