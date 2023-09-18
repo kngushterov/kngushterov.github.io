@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.sky['800'],
+        primary: colors.sky['600'],
         secondary: colors.amber['500'],
         neutral: colors.neutral['500']
       }
