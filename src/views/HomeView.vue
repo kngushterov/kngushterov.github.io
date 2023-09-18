@@ -1,67 +1,27 @@
 <template>
   <div
-    class="w-4/5 p-10 bg-white text-black flex flex-col gap-4 md:flex-row md:gap-7 rounded-3xl border-8 border-secondary"
+    class="w-4/5 p-10 bg-white text-black flex flex-col gap-4 lg:flex-row lg:gap-7 rounded-3xl border-8 border-secondary"
   >
-    <div class="flex flex-col gap-4 md:w-7/12">
+    <div class="flex flex-col gap-4 lg:w-7/12">
       <AccordionComponent title="Work Experience">
-        <OccupationSection v-bind="digitalLights" />
+        <OccupationSection v-for="(job, i) of work" :key="i" v-bind="job" />
       </AccordionComponent>
       <AccordionComponent title="Volunteering">
-        <OccupationSection v-bind="telerikAcademy" />
+        <OccupationSection v-for="(job, i) of volunteering" :key="i" v-bind="job" />
+      </AccordionComponent>
+      <AccordionComponent title="Strengths">
+        <StrengthSection v-for="(strength, i) in strengths" :key="i" v-bind="strength" />
       </AccordionComponent>
     </div>
-    <div class="flex flex-col gap-4 md:w-5/12">
-      <AccordionComponent title="Strengths">
-        <div>
-          <div>
-            ALABALA Work Experience Work Experience Work Experience Work Experience Work Experience
-            Work Experience Work Experience
-          </div>
-          <div>
-            Work Experience Work Experience Work Experience Work Experience Work Experience Work
-            Experience Work Experience Work Experience
-          </div>
-          <div>
-            Work Experience Work Experience Work Experience Work Experience Work Experience Work
-            Experience Work Experience Work Experience
-          </div>
-          <div>
-            Work Experience Work Experience Work Experience Work Experience Work Experience Work
-            Experience Work Experience Work Experience
-          </div>
-          <div>
-            Work Experience Work Experience Work Experience Work Experience Work Experience Work
-            Experience Work Experience Work Experience
-          </div>
-          <div>
-            Work Experience Work Experience Work Experience Work Experience Work Experience Work
-            Experience Work Experience Work Experience
-          </div>
-        </div>
+    <div class="flex flex-col gap-4 lg:w-5/12">
+      <AccordionComponent title="Technical Stack">
+        <TechStack />
+      </AccordionComponent>
+      <AccordionComponent title="Projects">
+        <ProjectSection v-for="(project, i) in projects" :key="i" v-bind="project" />
       </AccordionComponent>
       <AccordionComponent title="Education">
-        <div>
-          <div>
-            Work Experience Work Experience Work Experience Work Experience Work Experience Work
-            Experience Work Experience Work Experience
-          </div>
-          <div>
-            Work Experience Work Experience Work Experience Work Experience Work Experience Work
-            Experience Work Experience Work Experience
-          </div>
-          <div>
-            Work Experience Work Experience Work Experience Work Experience Work Experience Work
-            Experience Work Experience Work Experience
-          </div>
-          <div>
-            Work Experience Work Experience Work Experience Work Experience Work Experience Work
-            Experience Work Experience Work Experience
-          </div>
-          <div>
-            Work Experience Work Experience Work Experience Work Experience Work Experience Work
-            Experience Work Experience Work Experience
-          </div>
-        </div>
+        <EducationSection v-for="(education, i) in educations" :key="i" v-bind="education" />
       </AccordionComponent>
     </div>
   </div>
@@ -69,14 +29,28 @@
 
 <script lang="ts">
 import AccordionComponent from '@/components/AccordionComponent.vue'
+import EducationSection from '@/components/EducationSection.vue'
 import OccupationSection from '@/components/OccupationSection.vue'
-import { digitalLights, telerikAcademy } from '../occupations'
+import ProjectSection from '@/components/ProjectSection.vue'
+import StrengthSection from '@/components/StrengthSection.vue'
+import TechStack from '@/components/TechStack.vue'
+import { educations } from '@/educations'
+import { volunteering, work } from '@/occupations'
+import { projects } from '@/projects'
+import { strengths } from '@/strengths'
 
 export default {
   data: () => {
-    return { digitalLights, telerikAcademy }
+    return { work, volunteering, strengths, educations, projects }
   },
   name: 'home-view',
-  components: { OccupationSection, AccordionComponent }
+  components: {
+    OccupationSection,
+    AccordionComponent,
+    StrengthSection,
+    EducationSection,
+    ProjectSection,
+    TechStack
+  }
 }
 </script>
