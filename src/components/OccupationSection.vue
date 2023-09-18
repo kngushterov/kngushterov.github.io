@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4">
+  <div>
     <header class="font-bold text-xl">
       {{ position }}
     </header>
@@ -7,9 +7,11 @@
       {{ company }}
     </header>
     <TimeAndLocation v-bind="{ timeInterval, location }" />
-    <p>
-      {{ description }}
-    </p>
+    <div class="mt-1">
+      <p v-for="(text, i) in description" :key="i">
+        {{ text }}
+      </p>
+    </div>
     <div v-if="Boolean(points)">
       <li v-for="(point, i) in points" :key="i">
         {{ point }}
@@ -36,7 +38,7 @@ export default {
       }
     },
     location: String,
-    description: String,
+    description: Array,
     points: {
       type: Array,
       required: false
