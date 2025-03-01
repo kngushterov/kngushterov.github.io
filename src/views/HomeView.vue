@@ -23,6 +23,9 @@
       <AccordionComponent title="Education">
         <EducationSection v-for="(education, i) in educations" :key="i" v-bind="education" />
       </AccordionComponent>
+      <AccordionComponent title="Reference Letter" :isOpenDefault=false>
+        <img src="/reference-letter.png" />
+      </AccordionComponent>
     </div>
   </div>
 </template>

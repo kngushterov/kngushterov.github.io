@@ -5,7 +5,7 @@
     </header>
     <div>
       <TimeAndLocation v-bind="{ timeInterval, location }" />
-      <div class="flex gap-1">
+      <div v-if="link" class="flex gap-1">
         <img class="h-3 w-3 self-center" src="/link.svg" />
         <a
           class="text-sm text-secondary font-bold underline"

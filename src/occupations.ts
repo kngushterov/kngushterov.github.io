@@ -12,11 +12,11 @@ export interface Occupation {
 
 export const work: Occupation[] = [
   {
-    position: 'Web Developer',
-    company: 'Digital Lights',
+    position: 'Web Developer (Full Stack)',
+    company: 'Digital Lights, part of Wiser Technology',
     timeInterval: {
       from: '01/2022',
-      to: 'Present'
+      to: '03/2025'
     },
     location: 'Sofia, Bulgaria',
     description: [
@@ -24,10 +24,11 @@ export const work: Occupation[] = [
       'Mobility, Automotive, Deep Tech and Space'
     ],
     points: [
-      'Worked on 8 WebApps for the vehicles of German automotive brands',
-      'Worked on 4 internal company projects',
-      'Was Interim Dev Lead for 6 months',
-      'Mentored 3 Junior colleagues'
+      'Worked on 2 major projects and 3 smaller ones in between',
+      'Used the best/most popular frameworks and technologies',
+      'Dev lead for more than a year in my last project',
+      'Mentored Junior colleagues',
+      'Had to work very hard to catch up to university alumni'
     ]
   },
   {
@@ -43,7 +44,8 @@ export const work: Occupation[] = [
       'Worked on 100+ cases',
       'Mentored 2 interns',
       'Improved my social skills and etiquette dramatically',
-      'Gained priceless friendships and contacts'
+      'Gained priceless friendships and contacts',
+      'Experience turned out very useful in software development'
     ]
   }
 ]
@@ -58,8 +60,7 @@ export const volunteering: Occupation[] = [
     },
     location: 'Sofia, Bulgaria',
     description: [
-      'I have the privilege of being able to share my experience and help the students from Telerik Academy prepare for their programming journey.',
-      'Since I graduated I have been called upon on 4 different occasions to be a mentor and once to teach a course.'
+      'I have the privilege of being able to share my experience and help the students from Telerik Academy prepare for their programming journey. Since I graduated I have been called upon on 6 different occasions to be a mentor and once to teach a course.'
     ]
   }
 ]

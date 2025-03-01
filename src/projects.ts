@@ -5,37 +5,39 @@ export interface Project {
     to: string
   }
   location: string
-  link: string
+  link?: string
   description: string
   points?: string[]
 }
 
 export const projects: Project[] = [
   {
-    title: 'Acoustics.Digital',
+    title: 'BMW SW Tools Dashboard',
     timeInterval: {
-      from: '06/2023',
+      from: '08/2023',
+      to: '03/2025'
+    },
+    location: 'Digital Lights, part of Wiser Technology',
+    description:
+      "A set of tools designed to streamline the processes of internal management, storing, distribution, testing and analyzing of software created for BMW Group's vehicles",
+    points: [
+      'Technologies: TypeScript, React, MaterialUI, Express, MongoDB, Jest',
+      'I was a development lead in this project. Some of my responsibilities were to come up with feature ideas, designs and architecture of new tools.'
+    ]
+  },
+  {
+    title: 'VW In-Car Web Apps',
+    timeInterval: {
+      from: '01/2022',
       to: '07/2023'
     },
     location: 'Digital Lights',
-    link: 'acoustics.digital',
     description:
-      'An informative page for a product in development designed to appeal to potential investors',
-    points: ['Technologies: TypeScript, Angular, Figma (for the logo)']
-  },
-  {
-    title: 'Hush Hub',
-    timeInterval: {
-      from: '05/2023',
-      to: '06/2023'
-    },
-    location: 'Telerik Academy',
-    link: 'hushhub.dev',
-    description:
-      'A chat app with all the expected modern bells and whistles developed as a final project in Telerik Academy',
+      '8 unique web apps found in the Infotainment systems of various models from VW and Skoda',
     points: [
-      'Technologies: TypeScript, React, Firebase',
-      'I contributed only as a mentor to the team'
+      'Technologies: TypeScript, Angular, SCSS, Express, Jasmine + Karma',
+      'Learned the Scrum framework there through Jira',
+      "Largest team I've been a part of - around 20 people"
     ]
   },
   {
@@ -59,10 +61,15 @@ export const projects: Project[] = [
 export const techStack: string[] = [
   'TypeScript',
   'Angular',
+  'Tailwind CSS',
+  'Jest',
+
   'React',
-  'Vue',
-  'Express',
-  'HTML',
+  'MongoDB',
   'SASS',
-  'Tailwind CSS'
+  'Jasmine',
+
+  'Express',
+  'SQL',
+  'Vue'
 ]

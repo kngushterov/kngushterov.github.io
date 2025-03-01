@@ -7,20 +7,20 @@ export interface Strength {
 export const strengths: Strength[] = [
   {
     icon: 'progress',
-    title: 'Life as a RPG Game (love those!)',
+    title: 'Professional',
     description:
-      'It brings me sheer excitement to see myself being better than I was yesterday and to know that now I am prepared to take on challenges (love those as well!) that would have probably overwhelmed me in the past. And, of course, every game is way better with friends!'
+      "I've never missed a deadline and I am always willing to put some extra hours in to make sure I deliver or exceed the expected quality. I love earning the respect of my colleagues and contributing to their and the company's success. I value honesty and encourage constructive feedback."
   },
   {
     icon: 'motivation',
-    title: 'My Word is My Bond (and I use it to my advantage)',
+    title: 'Independent yet Dependable',
     description:
-      'I often publicly make bold declarations and by doing that I leave myself no choice but to do everything necessary to follow through on them. That works like a charm because it keeps me fully motivated to get the job done.'
+      "I respect everyone's time and call for help only as a last resort. This not only makes me a better teammate, but also allows me to learn through trial and error and gain experience faster. At the same time I love helping others, which is why I keep returning as mentor in Telerik Academy for free."
   },
   {
     icon: 'consistency',
-    title: 'Call Me Consistency',
+    title: 'Lawyer Turned Developer ',
     description:
-      'My name is of Latin origin and means "constant, steadfast". I love it and if I can\'t live up to it, I\'d have to change it, which is simply not happening.'
+      'Many people find it strange that I jumped from being a lawyer to being a developer. It turned out that some of the skills I honed back then translate beautifully: problem solving, decision making, communication with clients, time management, adaptability, acquiring new skills, and the best one - efficiently finding, understanding and putting to use relevant new information.'
   }
 ]
