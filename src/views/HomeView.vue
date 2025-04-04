@@ -14,7 +14,7 @@
       </AccordionComponent>
     </div>
     <div class="flex flex-col gap-4 lg:w-5/12">
-      <AccordionComponent title="Technical Stack">
+      <AccordionComponent title="Technologies">
         <TechStack />
       </AccordionComponent>
       <AccordionComponent title="Projects">

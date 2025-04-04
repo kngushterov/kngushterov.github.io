@@ -4,7 +4,7 @@ export interface Project {
     from: string
     to: string
   }
-  location: string
+  location?: string
   link?: string
   description: string
   points?: string[]
@@ -22,7 +22,9 @@ export const projects: Project[] = [
       "A set of tools designed to streamline the processes of internal management, storing, distribution, testing and analyzing of software created for BMW Group's vehicles",
     points: [
       'Technologies: TypeScript, React, MaterialUI, Express, MongoDB, Jest',
-      'I was a development lead in this project. Some of my responsibilities were to come up with feature ideas, designs and architecture of new tools.'
+      'I was the Development Lead in this project. Some of my responsibilities were to come up with feature ideas, designs and architecture of new tools.',
+      'Actively participated in implementing best practices for project management, code quality and performance.',
+      'Onboarded and guided 2 colleagues when they joined the project.'
     ]
   },
   {
@@ -35,41 +37,60 @@ export const projects: Project[] = [
     description:
       '8 unique web apps found in the Infotainment systems of various models from VW and Skoda',
     points: [
-      'Technologies: TypeScript, Angular, SCSS, Express, Jasmine + Karma',
-      'Learned the Scrum framework there through Jira',
-      "Largest team I've been a part of - around 20 people"
+      'Technologies: TypeScript, Angular, SCSS, Express, Jasmine + Karma, proprietary VW frameworks',
+      'Learned the Agile principles and Scrum framework using Jira for Project Management',
+      'Worked in an international team of around 30 people covering all roles of the software development process',
+      'Onboarded 2 junior colleagues into the project and mentored them until their promotion to mid-level developers'
     ]
   },
   {
-    title: 'Share the Ball',
+    title: 'Various Practice Projects',
     timeInterval: {
-      from: '11/2021',
-      to: '12/2021'
+      from: '06/2021',
+      to: 'present'
     },
-    location: 'Telerik Academy',
-    link: 'gitlab.com/kngushterov/share-the-ball',
-    description: 'A social network aimed at basketball enthusiasts',
+    description:
+      'Side projects to practice, experiment and learn new technologies, as well as master the ones I am using in production',
     points: [
-      'Technologies: JavaScript, React, CSS, Bootstrap',
-      'My final project in Telerik Academy',
-      'Was voted "Best Project" by the Academy\'s partners',
-      'Shows my inexperience back then'
+      'Front-end: Vue, Preact, Tailwind CSS, Redux Toolkit, NgRx',
+      'Back-end and DB: NestJS, Fastify, PostgreSQL, Prisma',
+      'Authentication: JWT, Auth0',
+      'CI/CD: Docker, NGINX, Azure App Service',
+      'One example is this resume, built with Vue and Tailwind CSS.'
     ]
   }
 ]
 
-export const techStack: string[] = [
+export const prodTechStack: string[] = [
   'TypeScript',
-  'Angular',
-  'Tailwind CSS',
-  'Jest',
-
-  'React',
-  'MongoDB',
-  'SASS',
-  'Jasmine',
-
   'Express',
-  'SQL',
-  'Vue'
+  'MongoDB',
+  'Mongoose',
+  'React',
+  'React Query',
+  'Angular 2+',
+  'RxJS',
+  'SCSS',
+  'MaterialUI',
+  'Jest',
+  'Jasmine',
+  'Git',
+  'Jira'
+]
+
+export const upskillTechStack: string[] = [
+  'NestJS',
+  'Fastify',
+  'PostgreSQL',
+  'Prisma',
+  'Vue',
+  'Preact',
+  'Tailwind CSS',
+  'Redux Toolkit',
+  'NgRx',
+  'JWT',
+  'Auth0',
+  'Docker',
+  'NGINX',
+  'Azure App Service'
 ]

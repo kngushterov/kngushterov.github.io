@@ -4,7 +4,7 @@
       <img :class="imgStyles" src="/calendar.svg" />
       <p :class="pStyles">{{ timeInterval.from }} - {{ timeInterval.to }}</p>
     </div>
-    <div :class="divStyles">
+    <div v-if="location" :class="divStyles">
       <img :class="imgStyles" src="/location.svg" />
       <p :class="pStyles">{{ location }}</p>
     </div>

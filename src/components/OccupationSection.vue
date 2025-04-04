@@ -6,14 +6,14 @@
     <header class="font-bold text-secondary">
       {{ company }}
     </header>
-    <TimeAndLocation v-bind="{ timeInterval, location }" />
-    <div class="mt-1">
-      <p v-for="(text, i) in description" :key="i" class="text-justify">
+    <div>
+      <p v-for="(text, i) in description" :key="i" class="italic">
         {{ text }}
       </p>
     </div>
-    <div v-if="Boolean(points)">
-      <li v-for="(point, i) in points" :key="i" class="text-justify">
+    <TimeAndLocation v-bind="{ timeInterval, location }" />
+    <div class="pt-2" v-if="Boolean(points)">
+      <li v-for="(point, i) in points" :key="i">
         {{ point }}
       </li>
     </div>
