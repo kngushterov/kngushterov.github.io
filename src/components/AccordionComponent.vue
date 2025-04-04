@@ -15,7 +15,7 @@
     </div>
     <div
       class="max-h-0 overflow-hidden flex flex-col gap-4 px-4 pt-4 transition-[max-height] duration-500"
-      :class="{ 'max-h-[200vh]': isOpenInternal }"
+      :class="{ 'max-h-[400vh]': isOpenInternal }"
     >
       <slot></slot>
     </div>
