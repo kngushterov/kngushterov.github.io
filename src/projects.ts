@@ -40,7 +40,7 @@ export const projects: Project[] = [
       'Technologies: TypeScript, Angular 2+, RxJS, SCSS, Express, Jasmine + Karma, proprietary VW frameworks, Git, Jira',
       'Learned the Agile principles and Scrum framework using Jira for Project Management',
       'Worked in an international team of around 30 people covering all roles of the software development process',
-      'Onboarded 2 junior colleagues into the project and mentored them until their promotion to mid-level developers'
+      'Onboarded 3 junior colleagues into the project and mentored them until their promotion to mid-level developers'
     ]
   },
   {

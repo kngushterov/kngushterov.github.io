@@ -15,7 +15,7 @@ export const strengths: Strength[] = [
     icon: 'motivation',
     title: 'Independent yet Dependable',
     description:
-      "I respect everyone's time and call for help only as a last resort. This not only makes me a better teammate, but also allows me to learn through trial and error and gain experience faster. At the same time I love helping others, which is why I keep returning as mentor in Telerik Academy for free."
+      "I respect everyone's time and call for help only as a last resort. This not only makes me a better teammate, but also allows me to learn through trial and error and gain experience faster. At the same time I love helping others, which is why I keep returning voluntarily as a mentor in Telerik Academy."
   },
   {
     icon: 'consistency',
