@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-justify">
     <header class="font-bold text-xl">
       {{ position }}
     </header>

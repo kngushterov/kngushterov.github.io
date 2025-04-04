@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-justify">
     <header class="font-bold text-xl">
       {{ title }}
     </header>
@@ -20,13 +20,14 @@
     </p>
     <div v-if="Boolean(points)">
       <li v-for="(point, i) in points" :key="i">
-        {{ point }}
+        <span v-html="makeBold(point)"></span>
       </li>
     </div>
   </div>
 </template>
 
 <script lang="ts">
+import type { PropType } from 'vue'
 import TimeAndLocation from './TimeAndLocation.vue'
 
 export default {
@@ -46,8 +47,15 @@ export default {
     link: String,
     description: String,
     points: {
-      type: Array,
+      type: Array as PropType<string[]>,
       required: false
+    }
+  },
+  methods: {
+    makeBold(point: string) {
+      const [category, technologies] = point.split(':')
+      if (!technologies) return point
+      return `<span class="font-bold">${category}:</span> ${technologies}`
     }
   }
 }

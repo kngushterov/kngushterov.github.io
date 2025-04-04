@@ -21,7 +21,7 @@ export const projects: Project[] = [
     description:
       "A set of tools designed to streamline the processes of internal management, storing, distribution, testing and analyzing of software created for BMW Group's vehicles",
     points: [
-      'Technologies: TypeScript, React, MaterialUI, Express, MongoDB, Jest',
+      'Technologies: TypeScript, React, React Query, MaterialUI, Express, MongoDB, Mongoose, Jest, Git, Jira',
       'I was the Development Lead in this project. Some of my responsibilities were to come up with feature ideas, designs and architecture of new tools.',
       'Actively participated in implementing best practices for project management, code quality and performance.',
       'Onboarded and guided 2 colleagues when they joined the project.'
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     description:
       '8 unique web apps found in the Infotainment systems of various models from VW and Skoda',
     points: [
-      'Technologies: TypeScript, Angular, SCSS, Express, Jasmine + Karma, proprietary VW frameworks',
+      'Technologies: TypeScript, Angular 2+, RxJS, SCSS, Express, Jasmine + Karma, proprietary VW frameworks, Git, Jira',
       'Learned the Agile principles and Scrum framework using Jira for Project Management',
       'Worked in an international team of around 30 people covering all roles of the software development process',
       'Onboarded 2 junior colleagues into the project and mentored them until their promotion to mid-level developers'
