@@ -56,6 +56,7 @@ export const projects: Project[] = [
       'Back-end and DB: NestJS, Fastify, PostgreSQL, Prisma',
       'Authentication: JWT, Auth0',
       'CI/CD: Docker, NGINX, Azure App Service',
+      'Mobile: Flutter, Dart',
       'One example is this resume, built with Vue and Tailwind CSS.'
     ]
   }
@@ -92,5 +93,7 @@ export const upskillTechStack: string[] = [
   'Auth0',
   'Docker',
   'NGINX',
-  'Azure App Service'
+  'Azure App Service',
+  'Flutter',
+  'Dart'
 ]
