@@ -1,6 +1,6 @@
 <template>
   <div class="text-justify">
-    <header class="font-bold text-xl">
+    <header class="font-bold text-xl text-start">
       {{ title }}
     </header>
     <div>

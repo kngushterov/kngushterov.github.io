@@ -1,9 +1,9 @@
 <template>
   <div class="text-justify">
-    <header class="font-bold text-xl">
+    <header class="font-bold text-xl text-start">
       {{ position }}
     </header>
-    <header class="font-bold text-secondary">
+    <header class="font-bold text-secondary text-start">
       {{ company }}
     </header>
     <div>
