@@ -27,6 +27,6 @@ export const strengths: Strength[] = [
     icon: 'motivation',
     title: 'Lawyer Turned Developer ',
     description:
-      'Many people find it strange that I jumped from being a lawyer to being a developer. It turned out that some of the skills I honed back then translate beautifully: precision and attention to details, problem solving, decision making, communication with clients, time management, adaptability, ability to learn and develop skills, and the best one - efficiently finding, understanding and putting to use relevant new information.'
+      'Many people find it strange that I jumped from being a lawyer to being a developer. It turned out that some of the skills I honed back then translate beautifully: precision and attention to details, problem solving, decision making, ability to learn and develop skills, communication with clients, time management, adaptability, and the best one - efficiently finding, understanding and putting to use relevant new information.'
   }
 ]

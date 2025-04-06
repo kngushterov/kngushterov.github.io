@@ -15,7 +15,13 @@
     </div>
     <button
       @click="toggleAllAccordions"
-      class="bg-primary text-white border-2 border-white rounded-xl h-min w-full lg:w-44 px-4 py-2 font-bold text-xl my-3 xl:mr-12 shadow-md transition-all duration-500 ease-in-out transform hover:bg-secondary hover:shadow-xl hover:-translate-y-1 hover:scale-105 active:scale-95 active:shadow-sm flex items-center justify-center gap-4 lg:justify-between lg:gap-0"
+      :class="[
+        'bg-primary text-white border-2 border-white rounded-xl h-min w-full lg:w-44 px-4 py-2 font-bold text-xl my-3 xl:mr-12 shadow-md',
+        'transition-all duration-500 ease-in-out transform',
+        'lg:hover:bg-secondary lg:hover:shadow-xl lg:hover:-translate-y-1 lg:hover:scale-105',
+        'active:scale-95 active:bg-secondary active:shadow-sm',
+        'flex items-center justify-center gap-4 lg:justify-between lg:gap-0'
+      ]"
     >
       <span>{{ buttonText }}</span>
       <img
