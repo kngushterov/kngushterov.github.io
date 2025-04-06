@@ -21,7 +21,7 @@ export const work: Occupation[] = [
     location: 'Sofia, Bulgaria',
     description: ['"A company that specializes in Software Development and Consulting"'],
     points: [
-      'Learned the basics of Typescript, Angular and Express, onboarded myself and started contributing within 2 weeks.',
+      'Learned the basics of TypeScript, Angular 2+ and Express, onboarded myself and started contributing within 2 weeks.',
       'Worked incredibly hard to catch up to university alumni. Coming from a different field, I always had a chip on my shoulder.',
       'Worked on 2 major projects and contributed in 3 smaller ones in spare time.',
       'Got promoted to mid-level developer in 8 months based on my performance and newly gained knowledge and skills.',
